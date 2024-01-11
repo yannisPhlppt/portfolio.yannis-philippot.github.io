@@ -1,0 +1,542 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scrollbar-gutter: auto;
+    font-family: 'Mukta', sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 1em;
+        z-index: 100;
+        background-color:#9E9E9E;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background-color:#708090;
+        box-shadow:0 -100vh 0 100vh #FFF5EE;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: black;
+      }
+}
+
+header {
+    position: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#actuel_accueil {
+    color: #6d6c69;
+}
+
+#actuel_competences {
+    color: #ae8406;
+}
+
+#actuel_projets {
+    color: #9421a3;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+header li {
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+#body_accueil {
+    background: linear-gradient(to right, #a6a6a6, #ffffff);
+}
+
+#header_accueil {
+    background: linear-gradient(to right, #000000, #737373);
+}
+
+#entete_accueil {
+    display: flex;
+    background: url(../img/image_fond_header.jpg) no-repeat fixed center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+#entete_accueil div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17.5%;
+    margin-left: 32.5%;
+}
+
+#a_propos_de_moi{
+    width: 60%;
+}
+
+aside img {
+    margin-top: -60%;
+    height: 80%;
+    width: 80%;
+}
+
+aside {
+    margin-left: 65%;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+h1,
+h2 {
+    color: white;
+    background-color: #434343;
+    filter: Alpha(opacity=70);
+    -moz-opacity: 0.70;
+    opacity: 0.70;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+h1 {
+    font-size: 600%;
+}
+
+
+h2 {
+    font-size: 300%;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+#body_competences {
+    background: linear-gradient(to right, #ffde59, #ff914d);
+}
+
+#header_competences {
+    background: linear-gradient(to right, #ffde59, #ff914d);
+}
+
+#entete_compétences {
+    display: flex;
+    background: url(../img/image_competence.jpg) no-repeat fixed center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+#entete_compétences div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17.5%;
+    margin-left: 35%;
+}
+
+#main_competences {
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+h3 {
+    font-size: 500%;
+}
+
+h4 {
+    font-size: 250%;
+}
+
+.diff_competences {
+    font-size: 150%;
+}
+
+h3,
+h4,
+p {
+    margin: 1%;
+}
+
+:root {
+    --success: #ff914d;
+}
+
+
+.progressbar-wrapper {
+    background-color: #FFC459;
+    border-radius: 15px;
+    width: 80%;
+}
+
+.progressbar {
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.progressbar[title="downloaded"] {
+    background-color: var(--success);
+}
+
+.html {
+    width: 70%;
+}
+
+.css {
+    width: 40%;
+}
+
+.php {
+    width: 60%;
+}
+
+.sql {
+    width: 65%;
+}
+
+.java {
+    width: 60%;
+}
+
+.cpp {
+    width: 50%;
+}
+
+.windows {
+    width: 80%;
+}
+
+.linux {
+    width: 70%;
+}
+
+.word {
+    width: 95%;
+}
+
+.excel {
+    width: 80%;
+}
+
+.powerpoint {
+    width: 90%;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+#body_projets {
+    background: linear-gradient(to right, #8c52ff, #ff914d);
+}
+
+#header_projets {
+    background: linear-gradient(to right, #8c52ff, #ff914d);
+}
+
+#entete_projets {
+    display: flex;
+    background: url(../img/image_projets.jpg) no-repeat fixed center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+#entete_projets div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17.5%;
+    margin-left: 42.5%;
+}
+
+.diapo {
+    border: solid 2px #e1817c;
+    background-color: #e1817c;
+    border-radius: 15px;
+    display: flex;
+    width: 30%;
+    margin: 2%;
+    margin-left: 12.5%;
+    flex-direction: column;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.diapo:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.diapo img {
+    height: 200px;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 1%;
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.diapo img:hover {
+    -webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+
+#affichage_ligne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.diapo p {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2%;
+    background-color: #9055f8;
+    border-radius: 15px;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+}
+
+.lien_blog{
+    text-align: center;
+}
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+/*------------------------------------------------------------*/
+
+.article_projets{
+    border: solid 2px #e1817c;
+    background-color: #e1817c;
+    border-radius: 15px;
+    display: flex;
+    width: 80%;
+    margin: 5%;
+    margin-left: 10%;
+}
+
+.article_img img{
+    width: 100%;
+    position: left;
+    margin: 5%;
+}
+
+.article_texte p{
+    width: 80%;
+    text-align: center;
+    margin: 2%;
+    margin-top: 12.5%;
+    margin-left: 10%;
+    background-color: #9055f8;
+    border-radius: 15px;
+}
+
+.article_html2a{
+    border: solid 2px #e1817c;
+    background-color: #e1817c;
+    border-radius: 15px;
+    display: flex;
+    width: 80%;
+    margin: 5%;
+    margin-left: 10%;
+}
+
+.article_html2a img{
+    width: 100%;
+    position: left;
+    margin: 2.5%;
+}
+
+.article_html2a p{
+    width: 95%;
+    text-align: center;
+    margin: 1%;
+    margin-top: -10%;
+    background-color: #9055f8;
+    border-radius: 15px;
+}
+
+#texte_editeur{
+    margin-top: 15%;
+}
+
+.article_quiz{
+    border: solid 2px #e1817c;
+    background-color: #e1817c;
+    border-radius: 15px;
+    display: flex;
+    width: 80%;
+    margin: 5%;
+    margin-left: 10%;
+}
+
+.article_quiz img{
+    width: 100%;
+    position: left;
+    margin: 2.5%;
+}
+
+.article_quiz p{
+    width: 95%;
+    text-align: center;
+    margin: 1%;
+    background-color: #9055f8;
+    border-radius: 15px;
+    padding-top: 5%;
+}
+
+#entete_projets_html {
+    display: flex;
+    background: url(../img/image_projets.jpg) no-repeat fixed center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+#entete_projets_html div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17.5%;
+    margin-left: 45%;
+}
+
+#entete_projets_editeur {
+    display: flex;
+    background: url(../img/image_projets.jpg) no-repeat fixed center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+#entete_projets_editeur div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17.5%;
+    margin-left: 31.5%;
+}
+
+#entete_projets_quiz {
+    display: flex;
+    background: url(../img/image_projets.jpg) no-repeat fixed center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+}
+
+#entete_projets_quiz div {
+    justify-content: center;
+    text-align: center;
+    margin-top: 17.5%;
+    margin-left: 30%;
+}
+
+#github{
+    text-align: center;
+    margin: 1%;
+    background-color: #9055f8;
+    border-radius: 15px;
+    width: 10%;
+    margin-left: 45%;
+    padding: 0.5%;
+    font-size: 200%;
+}
+
+/*------------------------------------------------------------*/
+
+footer {
+    background: #000000;
+    color: white;
+}
+
+footer li {
+    padding: 1%;
+    padding-left: 11%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#linkedin {
+    color: rgb(206, 8, 8);
+}
+
+#linkedin:visited {
+    color: rgb(151, 4, 151);
+}
+
+#linkedin:hover {
+    color: rgb(188, 137, 8);
+}
+
+#linkedin:active {
+    color: rgb(9, 9, 173);
+}
